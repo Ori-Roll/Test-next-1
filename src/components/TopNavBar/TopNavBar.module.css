@@ -1,4 +1,4 @@
-.top-menu {
+.top-nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,17 +8,18 @@
   padding: 0 10px;
 }
 
-.top-menu-dropdown-button-wrapper {
+.dropdown-button-wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.top-menu-dropdown-button {
+.dropdown-button {
   display: flex;
   align-items: center;
   padding: 10px;
   border: none;
   cursor: pointer;
-  background-color: transparent;
+  text-decoration: none;
+  color: black;
 }
