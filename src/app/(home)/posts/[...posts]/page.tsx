@@ -1,7 +1,7 @@
 import React from 'react';
 import { Post, PostProps } from '../../../../components/Post';
 
-type PostPageProps = { searchParams: any };
+type PostPageProps = { searchParams: { postId: string } };
 
 const PostPage = async (props: PostPageProps) => {
   const { searchParams } = props;
@@ -10,7 +10,7 @@ const PostPage = async (props: PostPageProps) => {
     `http://localhost:3000/api/posts?id=${postId}`
   )
     .then((response) => response.json()) //TODO: Change this to the actual API endpoint
-    .catch((err) => console.error(err));
+    .catch((error) => console.error(error));
 
   return (
     <>

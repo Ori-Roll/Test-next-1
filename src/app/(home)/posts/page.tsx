@@ -10,7 +10,7 @@ const Posts: React.FC<PostsProps> = async () => {
   const posts = await fetch('http://localhost:3000/api/posts')
     .then((response) => response.json())
     //TODO: Change this to the actual API endpoint
-    .catch((err) => console.log(err));
+    .catch((error) => console.log(error));
 
   return (
     <div>
@@ -24,11 +24,3 @@ const Posts: React.FC<PostsProps> = async () => {
 };
 
 export default Posts;
-
-// async function getData() {
-//   // const posts = await fetch('https://jsonplaceholder.typicode.com/posts')
-//   //   .then((response) => response.json())
-//   //   .then((json) => console.log(json));
-
-//   return posts;
-// }

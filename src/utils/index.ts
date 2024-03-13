@@ -1,0 +1,1 @@
+export { makeSlug } from './makeSlug';
